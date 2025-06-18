@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+groq
+openai
+google-api-python-client
+python-dotenv
+pydantic
+httpx
+jinja2
+python-multipart
+streamlit 
+requests
