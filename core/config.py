@@ -8,6 +8,8 @@ class Config:
     GROQ_API_KEY = os.getenv("GROQ_API_KEY")
     YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY")
     OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+    TELEGRAM_BOT_KEY = os.getenv("TELEGRAM_BOT_TOKEN")
+    API_BASE_URL = os.getenv("API_BASE_URL")
     
     # Model configurations
     MODELS = {

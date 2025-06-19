@@ -222,7 +222,7 @@ if st.session_state.chat_history:
 # Compact crisis resources
 st.markdown("""
 <div style="background: #fff3cd; padding: 0.8rem; border-radius: 6px; border-left: 3px solid #ffc107; margin: 1rem 0;">
-    <h4 style="margin-bottom: 0.5rem;">🚨 Crisis Resources</h4>
+    <h4 style="margin-bottom: 0.5rem;"> Crisis Resources</h4>
     <p style="margin: 0.2rem 0;"><strong>National Suicide Prevention:</strong> +88 09612 119911</p>
     <p style="margin: 0.2rem 0;"><strong>Emergency:</strong> 999</p>
 </div>
