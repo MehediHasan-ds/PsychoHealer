@@ -13,10 +13,14 @@ class Config:
     MODELS = {
         "llama": "llama-3.3-70b-versatile",
         "deepseek": "deepseek-r1-distill-llama-70b",
-        "mistral": "mistral-saba-24b",
         "openai": "gpt-3.5-turbo"
     }
     
     DEFAULT_MODEL = "llama"
-    MAX_TOKENS = 2000
-    TEMPERATURE = 0.7
+    MAX_TOKENS = 1500  # Reduced from 2000 for faster response
+    TEMPERATURE = 0.5  # Reduced from 0.7 for more consistent/faster responses
+    
+    # Performance optimizations
+    CACHE_SIZE = 100
+    MAX_VIDEOS = 4
+    THREAD_POOL_SIZE = 3

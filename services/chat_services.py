@@ -43,14 +43,14 @@ class ChatMemoryService:
         profile = self.user_profiles[user_id]
         
         context = f"""
-PATIENT CONTEXT:
-- Total sessions: {profile['total_sessions']}
-- First session: {profile['first_session']}
-- Current issues: {', '.join(profile.get('current_issues', ['None documented']))}
+        PATIENT CONTEXT:
+        - Total sessions: {profile['total_sessions']}
+        - First session: {profile['first_session']}
+        - Current issues: {', '.join(profile.get('current_issues', ['None documented']))}
 
-RECENT CONVERSATION SUMMARY:
-"""
-        
+        RECENT CONVERSATION SUMMARY:
+        """
+                
         # Add last 3 conversations
         recent = history[-3:] if len(history) >= 3 else history
         for i, conv in enumerate(recent, 1):
